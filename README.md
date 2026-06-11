@@ -4,9 +4,9 @@
 
 # **Command Center by Mannat AI**
 
-### The real-estate CRM that runs a UAE brokerage every day.
+### *The CIA of Real Estate Execution.*
 
-Battle-tested at a live Dubai brokerage — now available to yours.
+**Control · Intelligence · Action** — the AI-powered CRM that runs a UAE brokerage every day. Battle-tested at a live Dubai brokerage. Now available to yours.
 
 [**Live Demo →**](https://c2.mannatai.com/) · [**hello@mannatai.com**](mailto:hello@mannatai.com)
 
@@ -17,6 +17,41 @@ Battle-tested at a live Dubai brokerage — now available to yours.
 ## In one sentence
 
 Command Center is a real-estate-native CRM, marketing console, and public property website — bundled, AI-augmented, and deployed on **infrastructure dedicated to you**, not a shared SaaS pool.
+
+---
+
+## 🧭 Built on the CIA principle
+
+Command Center isn't a CRM in the traditional sense — it's an execution system. Every feature serves one of three pillars:
+
+### 🎯 Control
+Every lead, every agent, every campaign, every property — visible and governable from one place. **No more platform hopping. No more blind management.** You see what's happening and you decide what happens next.
+
+### 🧠 Intelligence
+AI-powered lead scoring. AI-powered agent performance ranking. Smart analytics across every channel. **Your decisions are powered by signals, not gut feel.**
+
+### ⚡ Action
+The system drives the next step — auto-assignments, proactive nudges, one-click "Sync Now" publishing, smart follow-up reminders. **Execution, not passive storage.**
+
+*This is what we mean by **"The CIA of Real Estate Execution."***
+
+---
+
+## How Command Center is different
+
+We built this from the ground up for real estate teams. Four things make it unique:
+
+### 🤖 AI-Powered Lead Scoring
+Our AI analyzes every lead based on behavior, engagement, and property interest. **Hot leads get flagged immediately.** Your agents focus on prospects ready to buy — not tire-kickers.
+
+### 🏆 Gamified Agent Performance (KRA)
+We turned performance tracking into a game. **Agents earn points for activities, compete on leaderboards, and hit targets.** The result? A motivated team that actually wants to perform.
+
+### 📥 All Leads in One Place
+Connect **Facebook, Instagram, LinkedIn, and Google Ads.** Every lead flows directly into Command Center. **No more platform hopping. No more missed opportunities.** Management sees the full picture in one dashboard.
+
+### 💬 Built-in AI Assistant
+Stuck on something? **Ask our AI chatbot.** It knows the platform inside out and provides instant answers 24/7 — no support ticket, no waiting.
 
 ---
 
@@ -84,7 +119,7 @@ The heart of the product — every lead from every source in one funnel.
 - **Live lead list** with role-aware visibility (agents see their own, managers see their teams)
 - **Visual lead journey** across configurable stages, with stage-time analytics
 - **Lead Funnel** dashboard — conversion rates between stages, drop-off detection
-- **Meta Lead Ads** end-to-end integration with full source attribution
+- **Multi-source lead capture** — **Facebook & Instagram Lead Ads**, **LinkedIn Lead Gen Forms**, **Google Ads** lead forms — all flow directly into one funnel with full source attribution. Plus automated ad-spend → cost-per-lead → cost-per-deal analytics pulled into Ad Center, so management sees the full ROI picture in one place.
 - **CSV/Excel import** with column mapping and UAE phone-format preset
 - **Phone validation** — bulk check and format correction
 - **Auto-assignment rules** — route new leads to the right agent automatically
@@ -146,7 +181,7 @@ Spend money, see what came back.
 - **Analytics Hub** — single dashboard tying lead-spend to deal-close
 - **Ad Center** — campaign-level performance: cost-per-lead, cost-per-qualified-lead, cost-per-deal, by source
 - **Marketing Analytics** — email-campaign opens/clicks/replies, WhatsApp click-throughs, organic vs paid mix
-- **Marketing Hub Email channel** — rich email composer (TipTap), branded email shell, configurable Branding tab, marketing-image uploads, sent via Resend
+- **Marketing Hub Email channel** — rich email composer, branded email shell, configurable Branding tab, marketing-image uploads
 - **Lead-source ROI** — drill down to any source and see what it actually produces
 
 ### ⚙️ Workspace
@@ -170,7 +205,7 @@ The operator's panel — comprehensive, role-gated to admins.
 - **Lead Notification Recipients** — wire who gets pinged for which leads
 - **Scoring** — configure AI-scoring weights for agent performance
 - **Public API** — manage API keys for your public website + partners
-- **Integrations** — Zoho, Google, Meta, custom OAuth providers
+- **Integrations** — Facebook & Instagram Lead Ads, LinkedIn Lead Gen Forms, Google Ads, Zoho, Google Workspace, custom OAuth providers
 - **SEO Indexing** — robots, sitemaps, meta-tag overrides for the public website
 - **Security** — 2FA enforcement, session management, **"Revoke all sessions"** kill-switch for offboarding
 - **Login Audit** — every successful + failed login, by user, IP, device
@@ -198,51 +233,20 @@ This is what separates Command Center from a generic CRM with a "real estate tem
 
 ---
 
-## Under the hood
+## 🛡️ Security by design — not by checkbox
 
-For the technically curious — what powers what you see.
+We don't treat security as a feature. **It's the foundation.** Every layer of Command Center ships secure by default — not bolted on, not optional, not behind an enterprise upsell.
 
-**Frontend**
-- Next.js 15 (App Router) + React 18 + TypeScript 5
-- Tailwind CSS + shadcn/ui + Radix UI
-- Zustand state, React Query server state
-- React Hook Form + Zod validation
-- PWA with service workers, install banner, push notifications
-
-**Backend**
-- Node.js 18+ on Fastify 4
-- PostgreSQL via Prisma ORM
-- Redis for caching, queue, session
-- JWT auth (refresh tokens, 7-day rolling)
-- Resend for transactional + marketing email
-
-**Public website**
-- Next.js with ISR + a Docker-volume-backed snapshot cache
-- Stays live for hours if the CRM backend goes down
-- Server-rendered HTML, Core Web Vitals green
-
-**Hosting & ops**
-- Docker Compose deployment
-- GitHub Actions CI/CD
-- Continuous monitoring with alerting on every customer instance
-
-**Tenancy & data model**
-- **One dedicated VPS per customer.** Separate database. Separate Redis. Separate Docker stack. Strongest possible data isolation by design.
-- **No multi-tenant data pooling.** Ever. You don't share a database row table with anyone else's leads or properties.
-- Optional Mannat-hosted plan for smaller teams who want zero infra touch.
-
----
-
-## Security & Compliance
-
-- **UAE PDPL-aware** data handling
-- **Authentication:** JWT + refresh tokens, Zoho SSO, Google SSO, password+email
-- **2FA** — TOTP-based, enforceable org-wide
+- **Dedicated infrastructure** — your data lives on a VPS dedicated to you. Never pooled with another brokerage's. *(See the deployment-model section above.)*
+- **UAE PDPL-aware** — data handling designed for UAE privacy law from day one
+- **Authentication** — JWT + refresh tokens, Zoho SSO, Google SSO, password + email
+- **2FA enforceable org-wide** — TOTP-based, admin-controlled
 - **Role-based access** — admin, manager, agent, viewer; row-level visibility on leads
 - **Audit logging** — every login (success + fail), every notification sent, every privileged action
-- **Session control** — admins can revoke all sessions for any user in ≤15 minutes (offboarding tool)
+- **Instant offboarding** — revoke all sessions for any user in ≤ 15 minutes — built-in kill-switch
 - **Encryption** — at rest and in transit
-- **OAuth allowlist** — restrict Zoho/Google SSO to specific email domains
+- **OAuth domain allowlists** — restrict SSO to your company domains only
+- **Continuous monitoring** with alerting on every customer instance
 - **Disaster recovery** — encrypted offsite backups with restore drills *(rolling out Q3 2026)*
 
 ---
@@ -323,6 +327,8 @@ Includes provisioning your dedicated instance, subdomain, SSO setup, CSV import 
 ## Who's behind this
 
 **[Mannat AI](https://mannatai.com)** is a software product company building practical AI-enabled tools for real-world businesses. Command Center is our flagship — the product that runs a live UAE real-estate brokerage every day.
+
+**Envisioned and led by IIT-Kanpur alumni** — engineering rigor from one of India's premier institutes, combined with on-the-ground UAE real-estate operational experience.
 
 Battle-tested in production since 2025. Every feature shipped because a working agent needed it — not because a product manager imagined it.
 
